@@ -1,0 +1,4 @@
+{
+  // Tells eslint to listen for potential syntax errors with react app syntax
+  "extends": "react-app"
+}
