@@ -4,9 +4,11 @@ import BoardRow from "../layout/BoardRow";
 import Square from "./Square";
 import { calculateWinner } from "../utils/calculateWinner";
 
-let status;
+
 
 function Board({ xIsNext, squares, onPlay }) {
+  let status;
+
   const [moveNum, setMoveNum] = useState(0);
   const { winner, winSquares } = calculateWinner(squares);
   // const moveRef = useRef(0);
