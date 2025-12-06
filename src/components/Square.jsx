@@ -1,9 +1,8 @@
 // import { useState } from "react";
 import PropTypes from "prop-types";
-
-let win;
-
 function Square({ value, onSquareClick, winningSquares, index }) {
+  let win;
+
   if (winningSquares) {
     win = winningSquares.some((square) => square === index);
   }
